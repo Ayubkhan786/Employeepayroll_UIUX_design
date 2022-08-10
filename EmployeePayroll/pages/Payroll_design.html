@@ -19,14 +19,35 @@
       </div>
     </div>
   </header>
-  <div class="form-content"></div>
+  <div class="form-content">
   <form action="#" class="form" onsubmit="save(event);return false">
     <div class="form-head">Employee payroll form</div>
     <div class="row-content">
       <label for="name" class="label text">Name</label>
       <input type="text" class="input" id="name" name="name" placeholder="Your name" required>
     </div>
-    
+  
+    <div class="row-content">
+      <label for="profile" class="label text">Profile Image</label>
+      <div class="profile-radio-content">
+        <label>
+          <input type="radio" id="profile1" name="profile" value="../Asset/p1.jpg" required>
+          <img src="../Asset/p1.jpg" id="image1" class="profile">
+        </label>
+        <label>
+          <input type="radio" id="profile2" name="profile" value="../Asset/p2.jpg" required>
+          <img src="../Asset/p2.jpg" id="image2" class="profile">
+        </label>
+        <label>
+          <input type="radio" id="profile3" name="profile" value="../Asset/p3.jpg" required>
+          <img src="../Asset/p3.jpg" id="image3" class="profile">
+        </label>
+        <label>
+          <input type="radio" id="profile4" name="profile" value="../Asset/p4.jpg" required>
+          <img src="../Asset/p4.jpg" id="image4" class="profile">
+        </label>
+    </div>
+  </div>
 </body>
 
 </html>
