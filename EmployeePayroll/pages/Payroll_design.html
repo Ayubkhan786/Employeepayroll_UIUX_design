@@ -20,33 +20,63 @@
     </div>
   </header>
   <div class="form-content">
-  <form action="#" class="form" onsubmit="save(event);return false">
-    <div class="form-head">Employee payroll form</div>
-    <div class="row-content">
-      <label for="name" class="label text">Name</label>
-      <input type="text" class="input" id="name" name="name" placeholder="Your name" required>
-    </div>
-  
-    <div class="row-content">
-      <label for="profile" class="label text">Profile Image</label>
-      <div class="profile-radio-content">
-        <label>
-          <input type="radio" id="profile1" name="profile" value="../Asset/p1.jpg" required>
-          <img src="../Asset/p1.jpg" id="image1" class="profile">
-        </label>
-        <label>
-          <input type="radio" id="profile2" name="profile" value="../Asset/p2.jpg" required>
-          <img src="../Asset/p2.jpg" id="image2" class="profile">
-        </label>
-        <label>
-          <input type="radio" id="profile3" name="profile" value="../Asset/p3.jpg" required>
-          <img src="../Asset/p3.jpg" id="image3" class="profile">
-        </label>
-        <label>
-          <input type="radio" id="profile4" name="profile" value="../Asset/p4.jpg" required>
-          <img src="../Asset/p4.jpg" id="image4" class="profile">
-        </label>
-    </div>
+    <form action="#" class="form" onsubmit="save(event);return false">
+      <div class="form-head">Employee payroll form</div>
+      <div class="row-content">
+        <label for="name" class="label text">Name</label>
+        <input type="text" class="input" id="name" name="name" placeholder="Your name" required>
+      </div>
+
+      <div class="row-content">
+        <label for="profile" class="label text">Profile Image</label>
+        <div class="profile-radio-content">
+          <label>
+            <input type="radio" id="profile1" name="profile" value="../Asset/p1.jpg" required>
+            <img src="../Asset/p1.jpg" id="image1" class="profile">
+          </label>
+          <label>
+            <input type="radio" id="profile2" name="profile" value="../Asset/p2.jpg" required>
+            <img src="../Asset/p2.jpg" id="image2" class="profile">
+          </label>
+          <label>
+            <input type="radio" id="profile3" name="profile" value="../Asset/p3.jpg" required>
+            <img src="../Asset/p3.jpg" id="image3" class="profile">
+          </label>
+          <label>
+            <input type="radio" id="profile4" name="profile" value="../Asset/p4.jpg" required>
+            <img src="../Asset/p4.jpg" id="image4" class="profile">
+          </label>
+        </div>
+      </div>
+        <div class="row-content">
+          <label for="gender" class="label text">Gender</label>
+          <div>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male" class="text">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female" class="text">Female</label>
+          </div>
+        </div>
+        <div class="row-content">
+          <label for="department" class="label text">Department</label>
+          <div>
+            <input type="checkbox" class="checkbox" id="hr" name="hr" value="HR">
+            <label for="hr" class="text">HR</label>
+            <input type="checkbox" class="checkbox" id="sales" name="sales" value="Sales">
+            <label for="sales" class="text">Sales</label>
+            <input type="checkbox" class="checkbox" id="finance" name="finance" value="Finance">
+            <label for="finance" class="text">Finance</label>
+            <input type="checkbox" class="checkbox" id="engineer" name="engineer" value="Engineer">
+            <label for="engineer" class="text">Engineer</label>
+            <input type="checkbox" class="checkbox" id="others" name="others" value="Others">
+            <label for="others" class="text">Others</label>
+          </div>
+        </div>
+        <div class="row-content">
+          <label for="salary" class="label text">Choose your salary: </label>
+          <input type="range" class="input" name="salary" id="salary" min="300000" max="500000" step="100" value="400000">
+          <output class="salary-output text" for="salary">400000</output>
+        </div>
   </div>
 </body>
 
