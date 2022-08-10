@@ -78,7 +78,7 @@
         <output class="salary-output text" for="salary">400000</output>
       </div>
       <div class="row-content">
-        <label for="startDate" class="label text">Start Date</label>
+        <label for="startDate" class="label text" id="date">Start Date</label>
         <div>
           <select id="day" name="Day">
             <option value="1">1</option>
@@ -154,6 +154,22 @@
     output.textContent = salary.value;
     salary.addEventListener('input', function () {
         output.textContent = salary.value;
+    });
+    const text = document.getElementById('name');
+    const textError = document.querySelector('.text-error');
+    textError.addEventListener('input', function () {
+        let nameRegex = RegExp('^[A-Z]{1}[a-z]{2,}$')
+        if (nameRegex.test(text.value))
+            textError.textContent = "";
+        else textError.textContent = "Name is Incorrect";
+    });
+    const date = document.getElementById('date');
+    const dateError = document.querySelector('#date-error');
+    textError.addEventListener('input', function () {
+        let nameRegex = RegExp('^(0?[1-9]|[12][0-9]|3[01])[\/\-](0?[1-9]|1[012])[\/\-]\d{4}$')
+        if (nameRegex.test(date.value))
+            dateError.textContent = "";
+        else dateError.textContent = "Date is Incorrect";
     });
 </script>
 </body>
