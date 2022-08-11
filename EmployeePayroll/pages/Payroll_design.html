@@ -8,6 +8,8 @@
   <title>Employee App</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap">
   <link rel="stylesheet" href="../css/Payroll_design.css">
+  <script src="../pages/EmployeePayroll.js"></script>
+    <script src="../pages/new_EmployeePayroll.js"></script>
 </head>
 
 <body>
@@ -155,7 +157,7 @@
     salary.addEventListener('input', function () {
       output.textContent = salary.value;
     });
-    const text = document.getElementById('name');
+    /*const text = document.getElementById('name');
     const textError = document.querySelector('.text-error');
     textError.addEventListener('input', function () {
       let nameRegex = RegExp('^[A-Z]{1}[a-z]{2,}$')
@@ -170,7 +172,7 @@
       if (nameRegex.test(date.value))
         dateError.textContent = "";
       else dateError.textContent = "Date is Incorrect";
-    });
+    });*/
   </script>
 </body>
 

@@ -13,6 +13,7 @@ class EmployeeePayrollData {
     this.Department = params[3];
     this.salary = params[4];
     this.startDate = params[5];
+    this.note = params[6];
   }
   get Department() {
     return this._Department;
@@ -52,6 +53,12 @@ class EmployeeePayrollData {
     if (nameRegex.test(name)) this._name = name;
     else throw "Name is incorrect";
   }
+  get note() {
+    return this._note;
+  }
+  set note(note) {
+    this._note = note;
+  }
 
   toString() {
     const option = { year: "numeric", month: "long", day: "numeric" };
@@ -71,7 +78,9 @@ class EmployeeePayrollData {
       ", Gender = " +
       this.gender +
       " , StartDate = " +
-      empDate
+      empDate +
+      ", note = " +
+      this.note
     );
   }
 }
