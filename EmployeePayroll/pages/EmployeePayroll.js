@@ -15,6 +15,14 @@ class EmployeeePayrollData {
     this.startDate = params[5];
     this.note = params[6];
   }
+  get name() {
+    return this._name;
+  }
+  set name(name) {
+    let nameRegex = RegExp("^[A-Z]{1}[a-z]{3,}$");
+    if (nameRegex.test(name)) this._name = name;
+    else throw "Name is incorrect";
+  }
   get Department() {
     return this._Department;
   }
@@ -45,14 +53,7 @@ class EmployeeePayrollData {
   set startDate(startDate) {
     this._startDate = startDate;
   }
-  get name() {
-    return this._name;
-  }
-  set name(name) {
-    let nameRegex = RegExp("^[A-Z]{1}[a-z]{3,}$");
-    if (nameRegex.test(name)) this._name = name;
-    else throw "Name is incorrect";
-  }
+  
   get note() {
     return this._note;
   }
