@@ -24,7 +24,7 @@ try{
 const createEmployeePayroll=()=>{
     let EmployeeePayrollData =new EmployeeePayrollData();
     try{
-        EmployeeePayrollData.Name = getinputvalueById('#name');
+        EmployeeePayrollData.name = getinputvalueById('#name');
     }catch(e){
         setTextValue('.text-error',e);
         throw e;
@@ -38,6 +38,7 @@ const createEmployeePayroll=()=>{
     alert(EmployeeePayrollData.tostring());
     return EmployeeePayrollData;
 }
+
 const getSelectedValues=(propertyValue)=>{
     let allItems=document.querySelectorAll(propertyValue);
     let selItems=[];
